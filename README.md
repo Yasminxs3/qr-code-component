@@ -35,7 +35,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 
 Although this is a beginner-level challenge, it helped me reinforce some important fundamentals, such as:
 
-- Semantic HTML structure using tags like <main>, <article>, and <footer>.
+- Semantic HTML structure
 
 - Using CSS variables with :root to keep the code organized and reusable.
 
