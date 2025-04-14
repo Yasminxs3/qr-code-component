@@ -5,24 +5,98 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400..900&display=swap" rel="stylesheet">
   
   <title>Frontend Mentor | QR code component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    :root {
+      --white: hsl(0, 0%, 100%);
+      --light-gray: hsl(212, 45%, 89%);
+      --grayish-blue: hsl(220, 15%, 55%);
+      --dark-blue: hsl(218, 44%, 22%);
+    }
+
     .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution a { color: var(--dark-blue); }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      height: 100%;
+      margin: 0;
+      background-color: var(--light-gray);
+    }
+    main {
+      font-family: 'Outfit', sans-serif;
+      width: 100%;
+      min-height: 95%;
+      justify-content: center;
+      display: flex;
+    }
+    article.card {
+      width: 320px;
+      height: 499px;
+      align-self: center;
+      background-color: var(--white);
+      border-radius: 20px;
+      padding: 16px 16px 40px 16px;
+      gap: 16px;
+      display: grid;
+      text-align: center;
+      box-shadow: 0 25px 25px rgba(0, 0, 0, 0.05);
+    }
+    .container {
+      padding: 0 16px;
+      gap: 16px;
+      display: grid;
+    }
+    .title {
+      font-weight: 700;
+      color: hsl(218, 44%, 22%);
+      font-size: 22px;
+      line-height: 120%;
+    }
+    .description {
+      font-weight: 400;
+      color: hsl(216, 15%, 48%);
+      font-size: 15px;
+      letter-spacing: 0.2px;
+      line-height: 140%;
+    }
+    img {
+      border-radius: 10px;
+      width: 100%;
+    }
+
+    @media (max-width: 320px) {
+      article.card {
+        width: 80%;
+      }
+    }
   </style>
 </head>
 <body>
-
-  Improve your front-end skills by building projects
-
-  Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
-  
-  <div class="attribution">
+  <main>
+    <article class="card">
+      <img src="/images/image-qr-code.png" alt="QR code"/>
+      <div class="container">
+        <h3 class="title">
+          Improve your front-end skills by building projects
+        </h3>
+        <p class="description">
+          Scan the QR code to visit Frontend Mentor and take your coding skills to the next level
+        </p>
+      </div>
+    </article>
+  </main>
+  <footer class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    Coded by <a href="https://github.com/Yasminxs3">Yasmin Silva</a>.
+  </footer>
 </body>
 </html>
